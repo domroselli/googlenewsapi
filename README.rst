@@ -10,10 +10,13 @@ Features
 * Ad-hoc queries
 * Creates Python objects out of JSON
 
-Usage ::
+Usage 
++++++
 
-from googlenews import GoogleNews
-from googlenews import GoogleNewsResults
-gnews = GoogleNews()
-results = [GoogleNewsResults(r) for r in g.get_scitech()]
+Here's an example: ::
+      
+      from googlenews import GoogleNews
+      from googlenews import GoogleNewsResults
+      gnews = GoogleNews()
+      results = [GoogleNewsResults(r) for r in gnews.get_scitech()]
 
